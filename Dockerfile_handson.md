@@ -9,12 +9,12 @@
 
 **Dockerfile:**
 
-FROM python:3.10.19-slim-trixie
-WORKDIR /apps
-ADD https://raw.githubusercontent.com/ruchi13041995/Docker-projects/refs/heads/main/addition.py /apps/
-ADD https://raw.githubusercontent.com/ruchi13041995/Docker-projects/refs/heads/main/Python.py /apps/
-ENTRYPOINT ["python"]
-CMD ["addition.py"]
+FROM python:3.10.19-slim-trixie<br>
+WORKDIR /apps<br>
+ADD https://raw.githubusercontent.com/ruchi13041995/Docker-projects/refs/heads/main/addition.py /apps/<br>
+ADD https://raw.githubusercontent.com/ruchi13041995/Docker-projects/refs/heads/main/Python.py /apps/<br>
+ENTRYPOINT ["python"]<br>
+CMD ["addition.py"]<br>
 
 
 
