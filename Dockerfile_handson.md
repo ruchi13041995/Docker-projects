@@ -11,8 +11,8 @@
 
 FROM python:3.10.19-slim-trixie
 WORKDIR /apps
-ADD <<link1>>
-ADD <<link2>>
+ADD <link1>
+ADD <link2>
 ENTRYPOINT ["python"]
 CMD ["addition.py"]
 
