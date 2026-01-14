@@ -41,27 +41,27 @@ EXPOSE 5000<br>
 ENTRYPOINT ["python"]<br>
 CMD ["menu_api.py"]<br>
 
-**Building an image:**
+**Building an image:**<br>
 docker build -t dinner-app .
 
-**Run an image and bind to the port:**
+**Run an image and bind to the port:**<br>
 docker run -p 5001:5000 dinner-app
 
-**Verify using:**
+**Verify using:**<br>
 curl localhost:5001/menu command
 Also verify on browser using:
 localhost:5001/menu command
 
 
-**Scenario 3:**
+**Scenario 3:**<br>
 **Upload above two images to your docker hub.**
 
-**Uploading 1st image:**
+**Uploading 1st image:**<br>
 docker login
 docker tag addsub:latest ruchi134/addsub:v1.0
 docker push ruchi134/addsub:v1.0
 
-**Uploading 2nd image:**
+**Uploading 2nd image:**<br>
 docker tag dinner-app:latest ruchi134/dinner-app:v1.0
 docker push ruchi134/dinner-app:v1.0
 
