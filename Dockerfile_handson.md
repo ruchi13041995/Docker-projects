@@ -48,7 +48,7 @@ docker build -t dinner-app .
 docker run -p 5001:5000 dinner-app
 
 **Verify using:**<br>
-curl localhost:5001/menu command
+curl localhost:5001/menu <br>
 Also verify on browser using:
 localhost:5001/menu command
 
