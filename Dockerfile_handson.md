@@ -3,7 +3,7 @@
 **Create a Docker container that runs addition.py by default. When arguments are passed at runtime, the container should execute subtraction.py instead**
 1.	**Use the official Python base image**
 2.	**Set the working directory to /apps**
-3.	**Copy the Python scripts from Link-1 and Link-2 into the container**
+3.	**Copy the Python scripts from Link-1(https://raw.githubusercontent.com/ruchi13041995/Docker-projects/refs/heads/main/addition.py) and Link-2(https://raw.githubusercontent.com/ruchi13041995/Docker-projects/refs/heads/main/Python.py) into the container**
 4.	**Use ENTRYPOINT and CMD together to achieve the required behavior**
 
 
@@ -11,8 +11,8 @@
 
 FROM python:3.10.19-slim-trixie
 WORKDIR /apps
-ADD <link1>
-ADD <link2>
+ADD https://raw.githubusercontent.com/ruchi13041995/Docker-projects/refs/heads/main/addition.py /apps/
+ADD https://raw.githubusercontent.com/ruchi13041995/Docker-projects/refs/heads/main/Python.py /apps/
 ENTRYPOINT ["python"]
 CMD ["addition.py"]
 
@@ -35,7 +35,7 @@ CMD ["addition.py"]
 
 FROM python:3.10-slim
 WORKDIR /app
-ADD https://raw.githubusercontent.com/ruchi13041995/Docker-projects/refs/heads/main/menu_api.py
+ADD https://raw.githubusercontent.com/ruchi13041995/Docker-projects/refs/heads/main/menu_api.py /apps/
 RUN pip install --no-cache-dir flask
 EXPOSE 5000
 ENTRYPOINT ["python"]
