@@ -58,11 +58,11 @@ localhost:5001/menu
 
 **Uploading 1st image:**<br>
 docker login
-docker tag addsub:latest ruchi134/addsub:v1.0
+docker tag addsub:latest ruchi134/addsub:v1.0<br>
 docker push ruchi134/addsub:v1.0
 
 **Uploading 2nd image:**<br>
-docker tag dinner-app:latest ruchi134/dinner-app:v1.0
+docker tag dinner-app:latest ruchi134/dinner-app:v1.0<br>
 docker push ruchi134/dinner-app:v1.0
 
 
