@@ -57,7 +57,7 @@ localhost:5001/menu
 **Upload above two images to your docker hub.**
 
 **Uploading 1st image:**<br>
-docker login
+docker login<br>
 docker tag addsub:latest ruchi134/addsub:v1.0<br>
 docker push ruchi134/addsub:v1.0
 
