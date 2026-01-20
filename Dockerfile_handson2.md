@@ -3,6 +3,7 @@
 **ANSWER:**
 
 **Dockerfile:**
+
 FROM ubuntu<br>
 WORKDIR /app<br>
 RUN apt-get update && apt-get install -y iputils-ping<br>
@@ -34,6 +35,7 @@ docker run message:latest<br>
 **ANSWER:**
 
 **Dockerfile:**
+
 FROM httpd:2.4<br>
 COPY ./index.html /usr/local/apache2/htdocs/<br>
 WORKDIR  /usr/local/apache2/htdocs/<br>
