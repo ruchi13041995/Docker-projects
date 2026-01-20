@@ -39,7 +39,7 @@ CMD ["Python.py"]<br>
 
 FROM  ubuntu:22.04<br>
 ENV WELCOME_MSG="Hello from Ruchi, welcome to DEVOPS!"<br>
-# Print the welcome message using shell (so variable expansion works)<br>
+# **Print the welcome message using shell (so variable expansion works)**<br>
 CMD ["sh", "-c", "echo \"$WELCOME_MSG \""]<br>
 
 RUN and verify command:
