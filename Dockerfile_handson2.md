@@ -3,16 +3,16 @@
 **ANSWER:**
 
 **Dockerfile:**
-FROM ubuntu
-WORKDIR /app
-RUN apt-get update && apt-get install -y iputils-ping
+FROM ubuntu<br>
+WORKDIR /app<br>
+RUN apt-get update && apt-get install -y iputils-ping<br>
 
 Commands outside container to verify :
 
-docker build -t my_ping .
-docker images
-docker run <image_id/name>
-ping google.com
+docker build -t my_ping .<br>
+docker images<br>
+docker run <image_id/name><br>
+ping google.com<br>
 
 
 **2. Print a Message:- Create a dockerfile that will print the "Hello - How are you" message when you run the image.**
@@ -21,24 +21,24 @@ ping google.com
 
 **Dockerfile**:
 
-FROM ubuntu
-CMD  echo "Hello - How are you"
+FROM ubuntu<br>
+CMD  echo "Hello - How are you"<br>
 
 Commands to build  and run:
 
-docker build -t message .
-docker run message:latest
+docker build -t message .<br>
+docker run message:latest<br>
 
 **3.	Serve a Static HTML Page:-  Use httpd image to serve a customized message "Hello - This is a HTTPD Docker Container!". [Index.html path: /usr/local/apache2/htdocs/]**
 
 **ANSWER:**
 
 **Dockerfile:**
-FROM httpd:2.4
-COPY ./index.html /usr/local/apache2/htdocs/
-WORKDIR  /usr/local/apache2/htdocs/
-RUN  echo "Hello - This is a HTTPD Docker Container!">>index.html
-EXPOSE 80
+FROM httpd:2.4<br>
+COPY ./index.html /usr/local/apache2/htdocs/<br>
+WORKDIR  /usr/local/apache2/htdocs/<br>
+RUN  echo "Hello - This is a HTTPD Docker Container!">>index.html<br>
+EXPOSE 80<br>
 
 Run commands:
 
