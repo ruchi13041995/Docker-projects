@@ -1,6 +1,5 @@
 **1. Install ping on top of Ubuntu:- Create a dockerfile that will have the "ping" package installed on top of Ubuntu:**
 
-**ANSWER:**
 
 **Dockerfile:**
 
@@ -18,7 +17,6 @@ ping google.com<br>
 
 **2. Print a Message:- Create a dockerfile that will print the "Hello - How are you" message when you run the image.**
 
-**ANSWER**:
 
 **Dockerfile**:
 
@@ -31,8 +29,6 @@ docker build -t message .<br>
 docker run message:latest<br>
 
 **3.	Serve a Static HTML Page:-  Use httpd image to serve a customized message "Hello - This is a HTTPD Docker Container!". [Index.html path: /usr/local/apache2/htdocs/]**
-
-**ANSWER:**
 
 **Dockerfile:**
 
